@@ -2,6 +2,8 @@ import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
 import App from "./App.jsx";
+import.meta.env.VITE_COIN_API_KEY;
+
 //import "./index.css"
 // Import BrowserRouter and rename it to Router
 import { BrowserRouter as Router } from "react-router-dom";

@@ -4,6 +4,7 @@ import Currencies from "./pages/Currencies.jsx";
 import Main from "./pages/Main.jsx";
 import Price from "./pages/Price.jsx";
 import Navbar from "./components/Navbar.jsx";
+import.meta.env.VITE_COIN_API_KEY;
 
 export default function App() {
   return (

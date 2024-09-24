@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import.meta.env.VITE_COIN_API_KEY;
 
 export default function Currencies(props) {
   const currencies = [

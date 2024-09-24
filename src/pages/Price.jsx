@@ -1,14 +1,23 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import.meta.env.VITE_COIN_API_KEY;
 
 export default function Price(props) {
   // Replace with your own API key from coinapi.io
-  const apiKey = "7923824F-B32B-4F62-A402-C2B93B12539C";
+  //const apiKey = "7923824F-B32B-4F62-A402-C2B93B12539C";
+  const apiKey = import.meta.env.VITE_COIN_API_KEY;
+
+
   const params = useParams();
   const symbol = params.symbol;
+  console.log(import.meta.env.VITE_COIN_API_KEY);
 
   
+ // const url = `https://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`;
   const url = `https://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`;
+
+  console.log(import.meta.env.VITE_COIN_API_KEY);
+
   const [coin, setCoin] = useState(null);
 
   const getCoin = async () => {
