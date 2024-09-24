@@ -10,13 +10,13 @@ export default function Price(props) {
 
   const params = useParams();
   const symbol = params.symbol;
-  console.log(import.meta.env.VITE_COIN_API_KEY);
+  //console.log(import.meta.env.VITE_COIN_API_KEY);
 
   
  // const url = `https://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`;
   const url = `https://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`;
 
-  console.log(import.meta.env.VITE_COIN_API_KEY);
+ // console.log(import.meta.env.VITE_COIN_API_KEY);
 
   const [coin, setCoin] = useState(null);
 

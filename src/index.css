@@ -69,7 +69,7 @@ button:focus-visible {
 .nav {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: rgb(84, 197, 71);
   color: white;
   padding: 15px;
   font-size: 2em;
