@@ -7,8 +7,8 @@ export default function Price(props) {
   const params = useParams();
   const symbol = params.symbol;
 
-  const url = `http://rest-sandbox.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`;
-
+  
+  const url = `https://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`;
   const [coin, setCoin] = useState(null);
 
   const getCoin = async () => {
